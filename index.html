@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="./main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -13,6 +14,8 @@
     <a href="#home" class="w3-bar-item w3-button"><b>MW</b> Web Developer</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
+        <a target="_blank" href="https://www.linkedin.com/in/michael-weissbluth-992a6414/" class="w3-bar-item w3-button">LinkedIn</a>
+      <a target="_blank" href="https://github.com/mikeweissbluth" class="w3-bar-item w3-button">Github</a>
       <a href="#projects" class="w3-bar-item w3-button">Projects</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
@@ -38,19 +41,20 @@
 
   <div class="w3-row-padding">
     <div class="w3-col l12 m12 w3-margin-bottom">
-        <p>An app that empowers users with knowledge of local storage facilities. Click on the orange diamond to see facilities near you, what chemicals do they store, their compliance history, & more!</p>
+        <p>An app that empowers users with knowledge of local storage facilities. Click on the orange diamond to see facilities near you, what chemicals do they store, their compliance history, & more! <a target="_blank" href="https://obscure-tor-83881.herokuapp.com">See for yourself!</a> <a target="_blank" href="https://github.com/mikeweissbluth/Project-Two"><i class="fab fa-github"></i></a></p>
       <div class="w3-display-container">
         
-        <div class="w3-display-topleft w3-black w3-padding"><a href="https://obscure-tor-83881.herokuapp.com">My Neighborhood Health</a></div>
+        <div class="w3-display-topleft w3-black w3-padding">
+          <a target="_blank" href="https://obscure-tor-83881.herokuapp.com">My Neighborhood Health</a></div>
         <img src="./assets/myNeighborhoodHealth.png" alt="My Neighborhood Health App" style="width:100%">
         
       </div>
     </div>
     <div class="w3-col l12 m12 w3-margin-bottom">
-        <p>Heard something intriguing about Studio Ghibli?  Seen a movie and been bitten by the bug?  Want to know more? Try our app: Pocket Ghibli. This reference tool can help you learn more about the studio's entire oevre. Additionally, here you can see take a quiz to see which movie you should view next. Another fun quiz can suggest which creature you are!</p>
+        <p>Heard something intriguing about Studio Ghibli?  Seen a movie and been bitten by the bug?  Want to know more? Try our app: Pocket Ghibli. This reference tool can help you learn more about the studio's entire oevre. Additionally, here you can see take a quiz to see which movie you should view next. Another fun quiz can suggest which creature you are! <a target="_blank" href="https://mikeweissbluth.github.io/pocket-ghibli-app/index.html">View the app</a> <a target="_blank" href="https://github.com/mikeweissbluth/pocket-ghibli-app"><i class="fab fa-github"></i></a></p>
       <div class="w3-display-container">
       
-        <div class="w3-display-topleft w3-black w3-padding "><a href= "https://mikeweissbluth.github.io/pocket-ghibli-app/index.html">Pocket Ghibli </a>
+        <div class="w3-display-topleft w3-black w3-padding "><a target="_blank" href= "https://mikeweissbluth.github.io/pocket-ghibli-app/index.html">Pocket Ghibli </a>
         </div>
         <img src="./assets/pocketGhibli.png" alt="Ghibli" style="width:100%">
         
@@ -84,8 +88,10 @@
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
+    <p>Lets get in touch and talk about your next project.
+      email me: michael@michaelweissbluth.com
+    </p>
+    <!-- <form action="/action_page.php" target="_blank">
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
@@ -93,7 +99,7 @@
       <button class="w3-button w3-black w3-section" type="submit">
         <i class="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
-    </form>
+    </form> -->
   </div>
   
 <!-- End page content -->
@@ -104,7 +110,12 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<!-- linkedin Icon -->
+    <a target="_blank" href="https://www.linkedin.com/in/michael-weissbluth-992a6414/" ><i class="fab fa-linkedin"></i></a>
+    <!-- github icon -->
+    <a target="_blank" href="https://github.com/mikeweissbluth"><i class="fab fa-github-square"></i></a>
+
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
 </footer>
 
 <!-- Add Google Maps -->
@@ -125,7 +136,7 @@ function myMap()
   marker.setMap(map);
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAziVtOKCokgUMHVqhndIVFS0Gf8W1A52w&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
